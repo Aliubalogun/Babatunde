@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORM CONTROL</title>
+    <meta http-equiv="refresh" content="20" />
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+    <form action="www.kwasu.com"><P>username<input type="text" name="username" size="15" placeholder="username"
+        maxlength="300" /></p >
+    <p>passsword <input type="password" name="password" placeholder="password">
+    </p>
+
+    <p>what do you think about me</p>
+<textarea name="comments" cols="30" rows="10" placeholder="your comments....."></textarea>
+<p>please enter your favorite music</p>
+<input type="checkbox" name="music" value="rock" checked="unchecked" />rock
+<input type="checkbox" name="music" value="ragea" /> ragea
+<input type="radio"name="music"  value="pop" /> pop
+<input type="radio" name="music" value="jazz" />jazz
+
+</form>
+<p>select any album you will like to play</p>
+<select name="music">
+    <option value="musics">musics</option>
+<option value="photos">photos</option>
+<option value="documents">documents</option>
+<option value="downloads">downloads</option>
+<option value="recently deleted">recently deleted</option>
+</select>
+<p>Do you play any of the following instruments?
+    <!--(You can select more than one option by holding
+        down control on a PC or command key on a Mac
+        while selecting different options.)--></p>
+        <form>
+        <select name="music categories" size="2" multiple="multiple">
+        <option value="love" selected="selected">Guitar</option>
+        <option value="rap">Drums</option>
+        <option value="instrumental">Keyboard</option>
+        <option value="bass">Bass</option>
+
+    </form>
+</select>
+
+<form>
+<p>upload your file here</p>
+<input type="file" name="user.song" /><br>
+<input type="submit" name="upload" value="upload">
+
+<p>Subscribe to our email list:</p>
+<input type="text" name="email" placeholder="@gmail.com"/>
+<input type="submit" name="subscribe"
+value="Subscribe" />
+ <!--type="image"If you want to use an image forthe submit button, you can give the type attribute a value of image. The src, width, height, and alt attributes work just like they do when used with the <img> element (which we saw on pages 99-100).-->
+
+<p>Subscribe to our email list:</p>
+<input type="text" name="email" />
+<input type="image" src="images/subscribe.jpg"
+width="100" height="20" />
+</form>
+
+                   <!--                labelling      -->
+<p>gender</p>
+<input type="radio" id="female" value="female"name="gender">
+
+<label for="female">female</label><br>
+
+<fieldset>
+<legend>contact details</legend>
+<label >Email;<br>
+<input type="text" name="Email" placeholder="joeemmy521@gmail.com"/> </label><br>
+<label>mobile; <br>
+    <input type="text" name="mobile" placeholder="07019464844"/></label><br>
+    <label>telephone; <br>
+    <input type="text" name="telephone" placeholder="+2348144355718" /></label><br>
+
+
+    
+
+</fieldset>
+<!--USERNAME/PASSWORDS-->
+<label for="username">username</label>
+<input type="text" name="username"placeholder="username" id="username" required="required"><br>
+<label for="password">password</label>
+<input type="password" name="password"placeholder="password" required="required"/>
+<input type="submit" value="submit" name="submit"><br>      
+<br>
+
+<!--EMAIL-->
+<label for="EMAIL">EMAIL;
+<input type="email" name="email" placeholder="@gmail.com"></label>
+<input type="submit" name="submit" >
+
+<form>
+    
+    <label for="username">Date:</label>
+    <input type="date" name="date" />
+    <input type="submit" value="Submit" /><br>
+
+
+
+
+    <p>Search:</p>
+<input type="search"placeholder="input keywords" name="search" />
+<input type="submit" value="Search" /><br>
+
+
+
+
+
+
+Would you visit again?
+<br />
+<label>
+<input type="radio" name="rating" value="yes" /> Yes </label>
+<label>
+<input type="radio" name="rating" value="no" /> No </label>
+<label>
+<input type="radio" name="rating" value="maybe" /> Maybe</label>
+<label for="comments"> Comments: </label>
+<br />
+<textarea rows="4" cols="40" id="comments"></textarea></p><label>
+<input type="checkbox" name="subscribe" checked="checked" /> Sign me up for email updates </label>
+<br />
+<input type="submit" value="Submit review" />
+</fieldset>
+</form>
+</body>
+</html>
